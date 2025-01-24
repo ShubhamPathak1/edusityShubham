@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Testimonials.css";
 import nextbtn from "../../assets/next-icon.png";
 import backbtn from "../../assets/back-icon.png";

@@ -26,6 +26,9 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      setTimeout(() => {
+        setResult("");
+      }, 1500);
     } else {
       console.log("Error", data);
       setResult(data.message);

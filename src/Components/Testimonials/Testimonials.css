@@ -94,3 +94,18 @@
     }
  }
 
+ @media (max-width:500px) {
+    .slide {
+        padding: 8px;
+    }
+    .slide>p {
+        font-size: 12px;
+    }
+    .slider {
+        margin: 15px;
+    }
+    .slider ul {
+        justify-content: center;
+    }
+ }
+
