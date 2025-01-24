@@ -1,0 +1,77 @@
+nav {
+    width: 100%;
+    /* background: #000; */
+    color: white;
+    padding: 4px 0;
+    position: fixed;
+    /* stays in same place even if page is scrolled, position fixed relative to viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul li {
+    display: inline-block;
+    /* "block" elements start on a new line and take up the full width available, "inline" elements appear on the same line as surrounding content and only take up the space needed, while "inline-block" combines the behaviors of both, allowing elements to sit next to each other like inline elements but with the ability to set width and height like block elements */
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+.dark-nav {
+    background-color: var(--blueThemeColor);
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width:850px) {
+    nav {
+        padding: 15px 0;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--blueThemeColor);
+        width: 180px;
+        padding-top: 70px;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 30px;
+    }
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hide-mobile-menu {
+        right: -180px;
+    }
+}

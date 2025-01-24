@@ -1,0 +1,65 @@
+.contact {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+}
+
+.contact h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contact h3 img {
+    width: 30px;
+}
+
+.contact ul img {
+    width: 20px;
+}
+
+.contact li {
+    list-style: none;
+    line-height: 1.4;
+    margin-top: 10px;
+    padding: 5px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-col p {
+    max-width: 450px;
+}
+
+form input, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(217, 217, 247);
+    outline: none;
+    padding: 10px;
+    resize: none;
+    /* remove by default resizing property of textarea */
+    margin: 10px auto;
+}
+
+.submitMsg {
+    display: block;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width:850px) {
+    .contact {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

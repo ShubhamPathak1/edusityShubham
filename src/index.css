@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Outfit font import */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+:root {
+    --blueThemeColor : rgb(38, 38, 119);
+}
+
+body {
+    background: #e5e2e2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+    /* inherit property value from its parent element */
+    line-height: 1;
+    cursor: pointer;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn {
+    background: rgb(232, 231, 231);
+    color: black;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    /* it makes the flex container(btn) display inline. */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.btn.dark-btn {
+    background-color: var(--blueThemeColor);
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn {
+        padding: 14px 20px;
+    }
+}

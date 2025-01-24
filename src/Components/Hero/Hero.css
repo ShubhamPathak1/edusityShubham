@@ -1,0 +1,56 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8, 4, 58, 0.7), rgba(8, 4, 58, 0.7)), url("../../assets/hero.png");
+    background-size: cover;
+    /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+    background-position: center;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    .hero-text {
+        max-width: 700px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-text p {
+        max-width: 600px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 650px) {
+    .hero-text {
+        max-width: 500px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        max-width: 400px;
+    }
+}
